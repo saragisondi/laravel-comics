@@ -1,20 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
+@import '@fontsource/roboto/index.css';
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@import './general/general';
+@import './general/colors';
+@import './general/mixin';
 
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
-    }
-}
 
-img {
-    max-height: 150px;
-}

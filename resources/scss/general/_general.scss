@@ -1,0 +1,27 @@
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.active{
+  color:  #0281F8;
+  border-bottom:3px solid #0281F8;
+}

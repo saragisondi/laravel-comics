@@ -1,0 +1,16 @@
+// FLEX
+@mixin d-flex{
+  display:flex;
+}
+
+@mixin space-around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// IMG
+@mixin background-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
