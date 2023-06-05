@@ -8,7 +8,20 @@
 </head>
 <body>
 
-    <h1>header</h1>
+    <header>
+        <!--LOGO -->
+        <div class="container-img">
+            <img src="/img/dc-logo.png" alt="logo">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+
+    </header>
 
 </body>
 </html>
