@@ -1,0 +1,138 @@
+footer{
+
+    // FOOTER TOP
+    .footer-top{
+        background-color: $tertiary-color;
+        padding: 30px;
+        @include space-around;
+
+        ul{
+        @include space-around;
+
+        li:nth-child(4) img{
+            width: 20%;
+        }
+
+        li:last-child img{
+            width: 30%;
+        }
+
+        li:last-child a{
+            width: 180px;
+        }
+
+        li{
+            @include space-around;
+
+
+            img{
+            width:25%;
+            }
+
+            span{
+            text-transform:uppercase;
+            color: $secondary-color;
+            margin: 0 5px;
+            font-size: 12px;
+            }
+
+        }
+
+        }
+
+    }
+
+    // FOOTER MIDDLE
+    .footer-middle{
+        background-image: url('/resources/img/footer-bg.jpg');
+        @include background-img;
+        display: flex;
+        justify-content: space-evenly;
+
+      // left
+        .left{
+        padding:30px;
+        .container-list{
+            display: flex;
+        }
+        .col{
+            width: calc(100% / 3);
+            font-size:small;
+            margin:0 5px;
+
+            .shop{
+            margin-top:20px;
+                }
+            }
+
+        h2{
+            color:$secondary-color;
+            font-size: 15px;
+        }
+
+
+        ul{
+            margin-top: 12px;
+
+            li{
+            margin: 6px 0;
+
+            a{
+                color:$quaternary-color;
+            }
+
+            a:hover{
+                color:white;
+            }
+            }
+        }
+        }
+      // right
+        .right{
+        width: 30%;
+        height: 350px;
+
+
+        .container-img{
+            width: 100%;
+            height: 100%;
+        }
+
+        }
+
+    }
+
+    // FOOTER BOTTOM
+    .footer-bottom{
+        background-color:#303030;
+        padding: 20px;
+        position:relative;
+        @include space-around;
+
+        button{
+        border: 2px solid $tertiary-color;
+        background-color: $quinary-color;
+        color: $secondary-color;
+        padding:10px;
+        }
+        .social{
+        @include space-around;
+
+        ul{
+            @include space-around;
+            margin:0 20px;
+        }
+
+        h2{
+            color:$tertiary-color;
+            font-size:medium;
+            font-weight:bold;
+        }
+        img{
+            margin: 0 10px;
+            width: 30px;
+        }
+        }
+    }
+
+}
