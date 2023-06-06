@@ -15,12 +15,12 @@
     <div class="card">
         <img src="{{$card['thumb']}}" alt="">
         <div class="info-card">
-            <h3>Titolo: {{$card['title']}}</h3>
-            <h4>Prezzo: {{$card['price']}}</h4>
-            <h4>Serie di appartenenza: {{$card['series']}}</h4>
-            <h4>Uscita: {{$card['sale_date']}}</h4>
-            <h4>Tipo: {{$card['type']}}</h4>
-            <p>Descrizione: {{$card['description']}}</p>
+            <h3><strong>Titolo:</strong> {{$card['title']}}</h3>
+            <h4><strong>Prezzo:</strong> {{$card['price']}}</h4>
+            <h4><strong>Serie di appartenenza:</strong> {{$card['series']}}</h4>
+            <h4><strong>Uscita:</strong> {{$card['sale_date']}}</h4>
+            <h4><strong>Tipo:</strong> {{$card['type']}}</h4>
+            <p><strong>Descrizione:</strong> {{$card['description']}}</p>
         </div>
 
         <a href="{{route('comics')}}"><button>Torna indietro</button></a>

@@ -1,0 +1,32 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  img{
+    width: 700px;
+    margin: 20px 0;
+  }
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  p{
+    width: 700px;
+    text-align: center;
+  }
+}
+
+button{
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color:#222222 ;
+  color: #ffff;
+  margin: 50px 0;
+  border: 2px solid #222222;
+}
+}
