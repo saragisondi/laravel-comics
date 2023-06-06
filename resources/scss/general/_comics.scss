@@ -1,0 +1,54 @@
+
+main{
+    background-color:$primary-color ;
+    color:$secondary-color;
+
+    .jumbotron{
+        background-image: url('/resources/img/jumbotron.jpg');
+        @include background-img;
+        width: 100%;
+        height:330px;
+    }
+
+    .current-series{
+        position: relative;
+
+        span{
+        position: absolute;
+        left:260px;
+        top:-15px;
+        }
+    }
+
+    .container-cards{
+        width: 65%;
+        height:500px;
+        margin:0 auto;
+        @include d-flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    span{
+        background-color: $tertiary-color;
+        padding: 5px 15px;
+        margin-bottom:20px
+    }
+
+    .container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+
+    button{
+        padding:5px 30px;
+        border:none;
+        font-size: x-small;
+        font-weight: bold;
+        background-color: $tertiary-color;
+        color:$secondary-color;
+        cursor: pointer;
+    }
+    }
+    }
