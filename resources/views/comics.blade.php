@@ -14,7 +14,53 @@
 
     <div class="container-cards">
 
-        cards
+        <div class="cards">
+            <div class="container-img">
+                <img src="" alt="series">
+            </div>
+
+            <div class="container-title">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="container-img">
+                <img src="" alt="series">
+            </div>
+
+            <div class="container-title">
+                <div></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="container-img">
+                <img src="" alt="series">
+            </div>
+
+            <div class="container-title">
+                <div></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="container-img">
+                <img src="" alt="series">
+            </div>
+
+            <div class="container-title">
+                <div></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="container-img">
+                <img src="" alt="series">
+            </div>
+
+            <div class="container-title">
+                <div></div>
+            </div>
+        </div>
+
 
 
     </div>
