@@ -1,4 +1,6 @@
-
+@php
+  $menu_header = config('menus.header_menu');
+@endphp
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,10 +21,11 @@
         <!-- NAVBAR -->
         <nav>
             <ul>
-
+              @foreach ($menu_header as $link)
               <li>
-                  <a href=""></a>
+                  <a href="{{route($link['href'])}}" class="{{Route::currentRouteName() === $link['href'] ? 'active' : ''}}">{{$link['text']}}</a>
               </li>
+              @endforeach
 
             </ul>
 
