@@ -1,5 +1,8 @@
 @php
   $footerTop = config('menus.footerTop');
+  $footerMiddle = config('menus.footerMiddle');
+  $footerBottom = config('menus.footerBottom');
+
 @endphp
 
 
@@ -37,43 +40,22 @@
             <div class="left">
 
             <div class="row">
-                <div class="container-list">
+              <div class="container-list">
                 <div class="col" >
-                    <h2>DC COMICS</h2>
-                    <ul>
-                    <li >
-                        <a href="#">link</a>
-                    </li>
-                    <li >
-                        <a href="#">link</a>
-                    </li>
-                    <li >
-                        <a href="#">link</a>
-                    </li>
-                    <li >
-                        <a href="#">link</a>
-                    </li> <li >
-                        <a href="#">link</a>
-                    </li>
-                    <li >
-                        <a href="#">link</a>
-                    </li>
-                    <li >
-                        <a href="#">link</a>
-                    </li>
-                    </ul>
+                  @foreach ($footerMiddle as $linkTitle)
+                  <h2>{{$linkTitle['title']}}</h2>
+                  <ul>
+                    @endforeach
 
-                    <h2 class="shop">SHOP</h2>
-                    <ul>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
                     <li >
-                        <a href="#">link</a>
+                      {{-- <a href="#">{{$linkTitle[$links]}}</a> --}}
                     </li>
-                    </ul>
+
+
+                  </ul>
+
                 </div>
-                </div>
+              </div>
             </div>
 
             </div>
@@ -91,29 +73,19 @@
 
         <!-- FOOTER BOTTOM -->
         <div class="footer-bottom">
-            <button>SIGN-UP NOW!</button>
-            <div class="social">
+          <button>SIGN-UP NOW!</button>
+          <div class="social">
             <h2>FOLLOW US</h2>
             <div>
-                <ul>
+              <ul>
+                @foreach ($footerBottom as $link)
                 <li>
-                    <img src="" alt="social">
+                    <img src="{{Vite::asset($link['img'])}}" alt="social">
                 </li>
-                <li>
-                    <img src="" alt="social">
-                </li>
-                <li>
-                    <img src="" alt="social">
-                </li>
-                <li>
-                    <img src="" alt="social">
-                </li>
-                <li>
-                    <img src="" alt="social">
-                </li>
-                </ul>
+                @endforeach
+              </ul>
             </div>
-            </div>
+          </div>
         </div>
 
         </footer>

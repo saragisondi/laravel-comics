@@ -76,7 +76,24 @@ Route::get('/dc power visa', function () {
   return view('dc power visa');
 })->name('dc power visa');
 
-// footer-bottom
+// footer-middle
+
+Route::get('/DC COMICS', function () {
+  return view('DC COMICS');
+})->name('DC COMICS');
+
+Route::get('/SHOP', function () {
+  return view('SHOP');
+})->name('SHOP');
+
+Route::get('/DC', function () {
+  return view('DC');
+})->name('DC');
+
+Route::get('/SITES', function () {
+  return view('SITES');
+})->name('SITES');
+
 
 // Route::get('/cards', function () {
 //   return view('cards');
