@@ -65,9 +65,11 @@ footer{
                 }
             }
 
-        h2{
+        h4{
             color:$secondary-color;
             font-size: 15px;
+            text-transform: uppercase;
+            margin-left:30px;
         }
 
 
@@ -76,6 +78,7 @@ footer{
 
             li{
             margin: 6px 0;
+
 
             a{
                 color:$quaternary-color;

@@ -19,7 +19,8 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/', function () {
-    return view('comics');
+  $cards = config('cards.cards');
+    return view('comics', compact( 'cards'));
 })->name('comics');
 
 
@@ -93,8 +94,3 @@ Route::get('/DC', function () {
 Route::get('/SITES', function () {
   return view('SITES');
 })->name('SITES');
-
-
-// Route::get('/cards', function () {
-//   return view('cards');
-// })->name('cards');

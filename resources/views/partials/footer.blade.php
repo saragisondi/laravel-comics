@@ -40,22 +40,26 @@
             <div class="left">
 
             <div class="row">
+
               <div class="container-list">
-                <div class="col" >
-                  @foreach ($footerMiddle as $linkTitle)
-                  <h2>{{$linkTitle['title']}}</h2>
-                  <ul>
-                    @endforeach
+                @foreach ($footerMiddle as $menu_col)
+                    <div class="col">
+                        @foreach ($menu_col as $key => $menu_section )
+                        <h4>{{$key}}</h4>
+                            <nav>
+                                <ul>
+                                    @foreach ($menu_section as $item)
+                                    <li>
+                                    <a href="">{{$item['text']}}</a>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                            </nav>
+                        @endforeach
+                    </div>
+                @endforeach
+            </div>
 
-                    <li >
-                      {{-- <a href="#">{{$linkTitle[$links]}}</a> --}}
-                    </li>
-
-
-                  </ul>
-
-                </div>
-              </div>
             </div>
 
             </div>
