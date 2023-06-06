@@ -18,7 +18,7 @@ Route::get('/characters', function () {
   return view('characters');
 })->name('characters');
 
-Route::get('/', function () {
+Route::get('/comics', function () {
   $cards = config('cards.cards');
     return view('comics', compact( 'cards'));
 })->name('comics');
@@ -94,3 +94,10 @@ Route::get('/DC', function () {
 Route::get('/SITES', function () {
   return view('SITES');
 })->name('SITES');
+
+Route::get('/comics-details/{slug}', function ($slug) {
+  $cards = config('cards.cards');
+  $card_array = array_filter($cards, fn($item) => $item['slug'] === $slug);
+  $card = $card_array[array_key_first($card_array)];
+  return view('comics-details', compact('card'));
+})->name('comics-details');
