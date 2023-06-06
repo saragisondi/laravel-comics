@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// header
 Route::get('/characters', function () {
   return view('characters');
 })->name('characters');
@@ -54,6 +55,29 @@ Route::get('/shop', function () {
   return view('shop');
 })->name('shop');
 
-Route::get('/cards', function () {
-  return view('cards');
-})->name('cards');
+// footer-top
+Route::get('/digital comics', function () {
+  return view('digital comics');
+})->name('digital comics');
+
+Route::get('/dc merchandise', function () {
+  return view('dc merchandise');
+})->name('dc merchandise');
+
+Route::get('/subscription', function () {
+  return view('subscription');
+})->name('subscription');
+
+Route::get('/comic shop locator', function () {
+  return view('comic shop locator');
+})->name('comic shop locator');
+
+Route::get('/dc power visa', function () {
+  return view('dc power visa');
+})->name('dc power visa');
+
+// footer-bottom
+
+// Route::get('/cards', function () {
+//   return view('cards');
+// })->name('cards');

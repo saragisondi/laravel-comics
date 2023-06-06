@@ -127,28 +127,28 @@ return [
 
 'footerTop' => [
   [
-    'href' =>'#',
-    'img'  => './src/assets/img/buy-comics-digital-comics.png',
+    'href' =>'digital comics',
+    'img'  => '../resources/img/buy-comics-digital-comics.png',
     'text' => 'digital comics'
   ],
 [
-    'href' => '#',
-    'img'  => './src/assets/img/buy-comics-merchandise.png',
+    'href' => 'dc merchandise',
+    'img'  => '../resources//img/buy-comics-merchandise.png',
     'text' => 'dc merchandise'
   ],
 [
-    'href' => '#',
-    'img'  => './src/assets/img/buy-comics-subscriptions.png',
+    'href' => 'subscription',
+    'img'  => '../resources/img/buy-comics-subscriptions.png',
     'text' => 'subscription'
   ],
 [
-    'href' => '#',
-    'img'  => './src/assets/img/buy-comics-shop-locator.png',
+    'href' => 'comic shop locator',
+    'img'  => '../resources/img/buy-comics-shop-locator.png',
     'text' => 'comic shop locator'
   ],
 [
-    'href' => '#',
-    'img'  => './src/assets/img/buy-dc-power-visa.svg',
+    'href' => 'dc power visa',
+    'img'  => '../resources/img/buy-dc-power-visa.svg',
     'text' => 'dc power visa'
   ],
 ],
@@ -224,3 +224,21 @@ return [
 
 
 ];
+?>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <img src="../resources/img/buy-comics-shop-locator.png" alt="">
+</body>
+
+</html> -->

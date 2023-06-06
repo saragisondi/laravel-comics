@@ -1,3 +1,8 @@
+@php
+  $footerTop = config('menus.footerTop');
+@endphp
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,38 +17,16 @@
         <!-- FOOTER TOP -->
         <div class="footer-top">
 
-            <ul>
-            <li >
-                <a href="#">
-                <img src="" alt="img">
-                <span>DIGITAL COMICS</span>
+          <ul>
+            @foreach ($footerTop as $link)
+            <li>
+                <a href="{{route($link['href'])}}" class="{{Route::currentRouteName() === ['href'] ? 'active' : ''}}">
+                <img src="{{Vite::asset($link['img'])}}" alt="{{$link['text']}}">
+                <span>{{$link['text']}}</span>
                 </a>
             </li>
-            <li >
-                <a href="#">
-                <img src="" alt="img">
-                <span>DC MERCHANDISE</span>
-                </a>
-            </li>
-            <li >
-                <a href="#">
-                <img src="" alt="img">
-                <span>SUBSCRIPTION</span>
-                </a>
-            </li>
-            <li >
-                <a href="#">
-                <img src="" alt="img">
-                <span>COMIC SHOP LOCATOR</span>
-                </a>
-            </li>
-            <li >
-                <a href="#">
-                <img src="" alt="img">
-                <span>DC POWER VISA</span>
-                </a>
-            </li>
-            </ul>
+            @endforeach
+          </ul>
 
         </div>
 
